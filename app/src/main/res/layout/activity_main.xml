@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="10dp"
+    tools:context="com.tk.androtech1.animation.MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/download"
+        android:id="@+id/iv_ball"
+       />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        >
+
+        <Button
+            android:text="Alpha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_alpha"
+            android:onClick="alphaAnimation"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="Scale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_scale"
+            android:onClick="scaleAnimation"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="Trans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="translateAnimation"
+            android:id="@+id/btn_translate"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="Rotate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="rotateAnimation"
+            android:id="@+id/btn_rotate"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</RelativeLayout>
